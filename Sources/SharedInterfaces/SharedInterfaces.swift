@@ -18,7 +18,7 @@ public protocol FeatureInput {
 }
 
 // Protocol for communication: feature -> host via callbacks
-public protocol FeatureActionHandler {
+public protocol FeatureOutput {
     associatedtype Action
     func handle(action: Action)
 }
